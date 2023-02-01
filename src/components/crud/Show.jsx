@@ -41,8 +41,8 @@ const Show = () => {
                             <td>{elemento.title}</td>
                             <td>{elemento.subtitle}</td>
                             <td>
-                                <Link to={`/edit/${elemento.id}`} className='btn btn-warning'>Edit</Link>
-                                <button onClick={() => deleteElement(elemento.id)} className="btn btn-danger">Delete</button>
+                                <Link to={`/edit/${elemento.id}`} className='btn btn-warning'>Editar</Link>
+                                <button onClick={() => deleteElement(elemento.id)} className="btn btn-danger">Eliminar</button>
                             </td>
 
                         </tr>
