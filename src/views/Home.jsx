@@ -1,14 +1,15 @@
 import React from 'react'
-import Show from '../components/crud/Show'
 
-
+import Navbar from '../components/layout/navigation/Navbar/Navbar'
+import Main from '../components/layout/organization/Main'
 const Home = () => {
   return (
 
     <React.Fragment>
-        <h1>MY PORTFOLIO</h1>
         
-        <Show/>
+        <Navbar/>
+
+        <Main/>
     </React.Fragment>
   )
 }
