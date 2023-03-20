@@ -1,9 +1,8 @@
 import React from 'react';
-
 import {BrowserRouter as Router,Routes,Route } from "react-router-dom";
 
 import Home from './../views/Home'
-import  Create  from '../components/crud/Create';
+import Create  from '../components/crud/Create';
 import Edit from '../components/crud/Edit'
 import Sobremi from './../views/Sobremi'
 import Proyectos from './../views/Proyectos'

@@ -1,13 +1,14 @@
 import React from 'react'
 
-import NavbarCopy from '../components/layout/navigation/Navbar/NavbarCopy'
+import Navbar from '../components/layout/navigation/Navbar/Navbar'
 import Main from '../components/layout/organization/Main'
+
 const Home = () => {
   return (
 
     <React.Fragment>
         
-        <NavbarCopy/>
+        <Navbar/>
         <Main/>
     </React.Fragment>
   )
