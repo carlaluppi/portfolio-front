@@ -7,44 +7,35 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-import { grey } from '@mui/material/colors';
-
-const color = grey[50];
+import { Link } from 'react-router-dom';
 
 
-const pages = ['Sobre mi', 'Portfolio', 'Contacto'];
+const pages = [{name:'Sobre mi', url:'/sobremi'}, {name:'Proyectos', url:'/proyectos'}, {name:'Contacto', url:'/contacto'}];
 
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+
   
 
   return (
     <AppBar elevation={0} position="static" color="grey"  >
+
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          
           <Typography
            
             variant="h6"
@@ -52,7 +43,7 @@ function ResponsiveAppBar() {
             component="a"
             href="/"
             sx={{
-              mr:2,
+              mr:1,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
               fontWeight: 700,
@@ -92,17 +83,22 @@ function ResponsiveAppBar() {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: 'block', md: 'none' },
-                justifyContent: 'center',
+                
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography  textAlign="center">{page}</Typography>
+                <MenuItem 
+                key={page.name} 
+                onClick={handleCloseNavMenu}
+                component={Link}
+                to= {page.url}
+                >
+                  <Typography  textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          
           <Typography
           
             variant="h5"
@@ -120,28 +116,23 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            CARLA LUPPI
           </Typography>
           <Box display="flex" justifyContent="center" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-                key={page}
+                key={page.name}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'black', display: 'block' }}
+                component={Link}
+                 to= {page.url}
               >
-                {page}
+                {page.name}
               </Button>
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                
-              </IconButton>
-            </Tooltip>
-            
-          </Box>
+          
         </Toolbar>
       </Container>
     </AppBar>

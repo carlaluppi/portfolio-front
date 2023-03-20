@@ -14,8 +14,6 @@ const Create = () => {
     const [linkDemo, setLinkDemo] = useState('');
     const navigate = useNavigate();
 
-    
-
     const store = async (e) => {
         e.preventDefault();
         await axios.post(url, 
