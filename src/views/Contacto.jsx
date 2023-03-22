@@ -5,11 +5,12 @@ import Main from '../components/layout/organization/Main'
 const Contacto = () => {
   return (
 
-    <React.Fragment>
+    <div className='container'>
         
         <Navbar/>
         <Main/>
-    </React.Fragment>
+
+    </div>
   )
 }
 

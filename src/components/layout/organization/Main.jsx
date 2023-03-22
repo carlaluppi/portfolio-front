@@ -1,10 +1,21 @@
 import React from 'react'
-import {} from '../styled';
-
-
+import {  DivImg, ContainerMain} from '../styled';
+import hola from '../../../assets/hola.svg';
+import Contact from '../navigation/Contact';
 const Main = () => {
   return (
-    <div>Main</div>
+
+      <ContainerMain>
+          
+          <DivImg>
+          <img src={hola} alt="saludo"/>
+          </DivImg>
+                
+          <Contact/>
+        
+              
+      </ContainerMain>
+
   )
 }
 

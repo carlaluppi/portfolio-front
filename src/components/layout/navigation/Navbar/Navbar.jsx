@@ -16,7 +16,7 @@ function Navbar () {
           <div div className="col-md-12 col-lg-3">
               <hr />
           </div>
-          
+
           <Nav className="col-md-12 col-lg-7">
                 {pages.map((page) => (
 
@@ -28,8 +28,8 @@ function Navbar () {
                     {page.name}
                   </Link>
               ))}
-          </Nav>
-
+          </Nav>     
+          
           
       
       </div>

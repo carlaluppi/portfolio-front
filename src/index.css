@@ -1,8 +1,21 @@
 
 
+html {
+  height: 100%;
+}
 
 body, #root {
   margin: 0;
-  height: 100svh;
+  min-height: 100vh;
+}
 
+
+header {
+  
+  height: 100vh;
+  height: 100svh;
+}
+
+a {
+  text-decoration: none;
 }
