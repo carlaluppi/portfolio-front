@@ -9,17 +9,10 @@ function Navbar () {
 
   return (
 
-    <ContainerNav className="container ">
-
-      <div className="row" >
-
-          <div div className="col-md-12 col-lg-3">
-              <hr />
-          </div>
-
-          <Nav className="col-md-12 col-lg-7">
+    <ContainerNav >
+          <hr />
+          <Nav>
                 {pages.map((page) => (
-
                   <Link
                     key={page.name}
                     component={Link}
@@ -30,10 +23,6 @@ function Navbar () {
               ))}
           </Nav>     
           
-          
-      
-      </div>
-
     </ContainerNav>
   );
 }

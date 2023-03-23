@@ -12,7 +12,8 @@ const Contact = () => {
 
         <Icon>
           <a href="mailto:carluppi99@gmail.com" > <img src={Google}  alt="icongoogle"/></a>
-          <Link to="https://www.github.com/carlaluppi" target="_blank" > <img src={GitHub}  alt="icon"/></Link>
+          <Link to="https://www.
+          github.com/carlaluppi" target="_blank" > <img src={GitHub}  alt="icon"/></Link>
           <Link to="https://www.linkedin.com/in/carla-luppi/" target="_blank" > <img src={Linkedin}  alt="icon"/></Link>
         </Icon>
 

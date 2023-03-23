@@ -5,7 +5,7 @@ import Main from '../components/layout/organization/Main'
 const Contacto = () => {
   return (
 
-    <div className='container'>
+    <div>
         
         <Navbar/>
         <Main/>

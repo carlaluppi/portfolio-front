@@ -6,11 +6,10 @@ import Main from '../components/layout/organization/Main'
 const Home = () => {
   return (
 
-    <React.Fragment>
-        
+    <div >
         <Navbar/>
         <Main/>
-    </React.Fragment>
+    </div>
   )
 }
 
