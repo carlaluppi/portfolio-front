@@ -1,20 +1,20 @@
 import React from 'react'
-import {  DivImg, ContainerMain} from '../styled';
-// import hola from '../../../assets/hola.svg';
+import {  Title, ContainerMain} from '../styled';
+
 import Contact from '../navigation/Contact';
 const Main = () => {
   return (
 
-      <ContainerMain>
+      <ContainerMain id="home">
           
-          <DivImg>
+          <Title>
             <h1 className='title'>HOLA.</h1>
-          {/* <img src={hola} alt="saludo"/> */}
-          </DivImg>
-                
-          <Contact/>
-        
+          </Title>
               
+          <Contact/>
+
+          <a href="#home "><p className='year'>2023</p>  </a>
+    
       </ContainerMain>
 
   )

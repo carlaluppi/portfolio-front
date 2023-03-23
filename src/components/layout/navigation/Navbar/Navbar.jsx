@@ -2,25 +2,16 @@ import  React from 'react';
 import {ContainerNav, Nav} from '../../styled.js';
 import { Link } from 'react-router-dom';
 
-const pages = [{name:'SOBRE MI', url:'/sobremi'}, {name:'PROYECTOS', url:'/proyectos'}, {name:'CONTACTO', url:'/contacto'}];
-
-
 function Navbar () {
 
   return (
 
     <ContainerNav >
-          <hr />
+          <hr/>  
           <Nav>
-                {pages.map((page) => (
-                  <Link
-                    key={page.name}
-                    component={Link}
-                    to= {page.url}
-                  >
-                    {page.name}
-                  </Link>
-              ))}
+              <a href="#sobremi">SOBRE MI</a>
+              <a href="#proyectos">PROYECTOS</a>
+              <a href="#contacto">CONTACTO</a>
           </Nav>     
           
     </ContainerNav>
