@@ -3,7 +3,7 @@ import {ContainerMain2, ContainerRight, ContainerLeft} from '../styled';
 
 import Contact from '../navigation/Contact';
 
-const Main2 = () => {
+const Section2 = () => {
   return (
 
       <ContainerMain2 id='sobremi'> 
@@ -12,8 +12,9 @@ const Main2 = () => {
             <h1>fotooo</h1>
           </ContainerLeft>  
 
-          <ContainerRight>
-              <h1>golaaa</h1>
+          <ContainerRight >
+              <h1 >Intr <br />
+              odu <br />cción.</h1>
           </ContainerRight>   
           
           <Contact/>
@@ -23,4 +24,4 @@ const Main2 = () => {
   )
 }
 
-export default Main2
+export default Section2;

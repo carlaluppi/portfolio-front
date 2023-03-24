@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const ContainerNav = styled.div`
+export const ContainerNav = styled.nav`
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Questrial&family=Work+Sans:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Questrial&family=Work+Sans:wght@700&display=swap');
@@ -40,36 +40,7 @@ export const Nav = styled.div`
         }     
 `;
 
-export const ContainerMain2 = styled.section`
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    
 
-    .year{
-            color: black;
-            font-weight:800;
-            font-size: 1rem;
-            position: absolute;
-            bottom: 1rem;
-            right:3rem;
-        }
-`;
-   
-export const ContainerRight = styled.section`
-    background-color: #F0CB46;
-    height: 100vh;
-    width: 50%;
-    margin: 0;
-    
-`;
-export const ContainerLeft = styled.section`
-    
-    height: 100vh;
-    width: 50%;
-   
-    `;
 export const ContainerMain = styled.section`
     height: 100vh;
     width: 100%;
@@ -87,7 +58,6 @@ export const ContainerMain = styled.section`
             bottom: 1rem;
             right:3rem;
         }
-
 `;
 
 export const Title = styled.div`
@@ -129,9 +99,54 @@ export const Icon = styled.div`
         display: flex;
         flex-direction: column;
         gap:0.5rem;
-
-
 `;
 
+export const ContainerMain2 = styled.section`
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
 
+    .year{
+            color: black;
+            font-weight:800;
+            font-size: 1rem;
+            position: absolute;
+            bottom: 1rem;
+            right:3rem;
+        }
+`;
+   
+export const ContainerRight = styled.section`
+    background-color: #F0CB46;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+        h1{ 
+            font-size: 5rem;
+            font-weight:800;
+        }
+    
+`;
+export const ContainerLeft = styled.section`
+    
+    height: 100vh;
+    width: 50%;
+
+    `;
+
+// -----EFECTO DE SCROLL -----PADRE
+export const ContainerScroll = styled.div`
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+    `;
+export const Sections = styled.section`  
+    scroll-snap-align: start;
+`;
+// --------------------------------HIJOS

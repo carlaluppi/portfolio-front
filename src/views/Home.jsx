@@ -1,19 +1,23 @@
 import React from 'react'
 
 import Navbar from '../components/layout/navigation/Navbar/Navbar'
-import Main from '../components/layout/organization/Main'
-import Main2 from '../components/layout/organization/Main2'
+import Section from '../components/layout/organization/Section'
+import Section2 from '../components/layout/organization/Section2'
+import {ContainerScroll, Sections} from '../components/layout/styled';
 
 const Home = () => {
   return (
 
-    <div >
-        <Navbar/>
-        <Main/>
-        <Main2/>
+    <ContainerScroll >
+      <Sections>
+          <Navbar/>
+          <Section/>
+          <Section2/>
+          <Section/>
+          <Section2/>
+      </Sections>
 
-
-    </div>
+    </ContainerScroll>
   )
 }
 
