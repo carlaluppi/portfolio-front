@@ -1,6 +1,6 @@
 import React from 'react'
 import {ContainerMain3} from '../styled';
-import Card from '../organization/Card';
+import ProyectCard from './ProyectCard';
 
 const SectionThree = () => {
 
@@ -8,9 +8,8 @@ const SectionThree = () => {
 
     <ContainerMain3 id='proyectos'> 
 
-        <h1>mis proyectos</h1>
         
-        <Card/>
+        <ProyectCard/>
 
         </ContainerMain3>
 

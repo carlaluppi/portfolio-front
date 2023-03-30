@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Card } from "react-bootstrap";
 
 
 export const ContainerNav = styled.nav`
@@ -124,15 +125,8 @@ export const ContainerMain2 = styled.section`
 `;
 export const ContainerMain3 = styled.section`
     height: 100vh;
-    padding: 10% 10%;
-    display: flex;
-    justify-content: center;
-    
-    @media (max-width: 700px) 
-                {
-                display: flex;
-                flex-direction: column;
-            };
+    padding:  10%;
+
 
 `;
    
@@ -184,7 +178,6 @@ export const Sections = styled.section`
     scroll-snap-align: start;
 `;
 
-
 export const ButtonDw = styled.button` 
 border-radius :10px ;
 border-color: black;
@@ -202,4 +195,29 @@ background-color:#cbbfe7;
         color: black;
         font-family: "Work Sans";
     }
+`;
+
+export const CardStyle = styled(Card)`  
+    width: 40rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    
+&:hover {
+    scale: 1.01;
+    
+    
+}
+.card-title {
+
+}
+
+.card-img {
+    padding: 1rem;
+    /* object-fit: contain; */
+    /* max-height: 100%; */
+    width: 100%;
+    background-color: black;
+
+}
 `;
