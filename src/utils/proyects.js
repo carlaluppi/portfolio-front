@@ -1,24 +1,34 @@
 const proyects = [
+
     {
-    id: "1",
+        id: "1",
+        title: "Escape Room 404",
+        image: "",
+        text: "Hola soy el texto",
+        link: "https://rankingapp.vercel.app/",
+        
+        },
+
+    {
+    id: "2",
     title: "Ranking App",
-    imgUrl: "src/assets/proyects/nun.svg",
+    image: "https://raw.githubusercontent.com/carlaluppi/portfolio-front/develop/src/assets/proyects/rankingapp.svg",
     text: "Hola soy el texto",
     link: "https://rankingapp.vercel.app/",
     
     },
     {
-    id: "2",
+    id: "3",
     title: "The Nun ",
-    imgUrl: "",
+    image: "https://raw.githubusercontent.com/carlaluppi/portfolio-front/develop/src/assets/proyects/nun.svg",
     text: "Hola soy el texto",
     link: "https://thenun.netlify.app/",
 
     },
     {
-    id: "3",
+    id: "4",
     title: "PlayList Noob's",
-    imgUrl: "",
+    image: "https://raw.githubusercontent.com/carlaluppi/portfolio-front/develop/src/assets/proyects/playlist.svg",
     text: "Hola soy el texto",
     link: "https://playlist-noobs.netlify.app/",
 
