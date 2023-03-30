@@ -1,22 +1,28 @@
 import React from 'react'
 import {ContainerMain3} from '../styled';
 import Card from '../organization/Card';
+import proyects from '../../../utils/proyects';
 
-const SectionThree = (props) => {
+function createdCard(proyects) {
+
+    return(
+        <Card
+        key={proyects.id}
+        title={proyects.title}
+        image={proyects.image}
+        text={proyects.text}
+        />
+    );
+}
+const SectionThree = () => {
 
     return (
-        
 
-        <ContainerMain3 id='proyectos'> 
+    <ContainerMain3 id='proyectos'> 
 
-<Card
-      
-      name={name}
-      image={contact.imgURL}
-      tel={contact.phone}
-      email={contact.email}
-    />
-            
+        <h1>mis proyectos</h1>
+        {proyects.map(createdCard)}
+
 
         </ContainerMain3>
 

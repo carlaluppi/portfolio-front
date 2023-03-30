@@ -2,7 +2,7 @@ const proyects = [
     {
     id: "1",
     title: "Ranking App",
-    imgUrl: "",
+    imgUrl: "src/assets/proyects/nun.svg",
     text: "Hola soy el texto",
     link: "https://rankingapp.vercel.app/",
     

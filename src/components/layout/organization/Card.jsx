@@ -2,18 +2,19 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import proyects from '../../../utils/proyects';
 
-function Grid(props) {
+function Grid() {
   return (
     <Row xs={1} md={2} className="g-4">
-      {Array.from({ length: 4 }).map((_, idx) => (
+      {proyects.map((proyect) => (
         <Col>
           <Card>
-            <Card.Img variant="top" src={props.imgUrl} />
+            <Card.Img variant="top" src={proyect.image} />
             <Card.Body>
-              <Card.Title>{props.title} </Card.Title>
+              <Card.Title>{proyect.title} </Card.Title>
               <Card.Text>
-                {props.text}
+                {proyect.text}
               </Card.Text>
             </Card.Body>
           </Card>
