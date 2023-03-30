@@ -20,7 +20,7 @@ const proyects = [
     {
     id: "3",
     title: "The Nun ",
-    image: "https://raw.githubusercontent.com/carlaluppi/portfolio-front/develop/src/assets/proyects/nun.svg",
+    image: "https://raw.githubusercontent.com/carlaluppi/portfolio-front/2f3bddaa0ea158bd03dc8e1161a45ab140c1d0e8/src/assets/proyects/nun.svg",
     text: "Hola soy el texto",
     link: "https://thenun.netlify.app/",
 

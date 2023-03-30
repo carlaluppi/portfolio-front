@@ -59,6 +59,15 @@ export const ContainerMain = styled.section`
             bottom: 1rem;
             right:3rem;
         }
+        @media (max-width: 700px) 
+                {
+                h1{
+                    left:10rem;
+                }
+                .year{
+                    display: none;
+                }
+            };
 `;
 
 export const Title = styled.div`
@@ -90,11 +99,16 @@ export const ContainerContact = styled.div`
         left: 0;
         margin-left: 5%;
         bottom: 2rem;
+        @media (max-width: 700px) 
+                {
+                    margin-left: 3%; 
+            };
 
 `;
 export const Vertical = styled.div`
         padding-top:30px;
         position: relative;
+        
 `;
 export const Icon = styled.div`
         display: flex;
@@ -106,14 +120,6 @@ export const ContainerMain2 = styled.section`
     height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
-    
-    @media (max-width: 700px) 
-                {
-                display: flex;
-                flex-direction: column;
-            };
-
     .year{
             color: black;
             font-weight:800;
@@ -122,6 +128,12 @@ export const ContainerMain2 = styled.section`
             bottom: 1rem;
             right:3rem;
         }
+        @media (max-width: 700px) 
+                {
+                display: flex;
+                flex-direction: column;
+                
+            };
 `;
 export const ContainerMain3 = styled.section`
     height: 100vh;
@@ -220,4 +232,11 @@ export const CardStyle = styled(Card)`
     background-color: black;
 
 }
-`;
+@media (max-width: 700px) 
+                {
+                    display: flex;
+                    align-items: center;
+                width: 100%;
+                
+            };
+    `;
