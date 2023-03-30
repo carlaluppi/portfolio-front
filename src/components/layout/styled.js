@@ -118,24 +118,32 @@ export const ContainerMain2 = styled.section`
         }
 `;
    
-export const ContainerRight = styled.section`
+export const Main1 = styled.section`
     background-color: #F0CB46;
     height: 100vh;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    flex-direction: column;
+    gap: 2rem;
         h1{ 
             font-size: 5rem;
             font-weight:800;
         }
     
+        p{
+            font-family: "Questrial";
+            width: 40%;
+            letter-spacing: 2px; 
+            transform: translateX(15%);
+        }
 `;
-export const ContainerLeft = styled.section`
+export const Main2 = styled(Main1)`
     
     height: 100vh;
     width: 50%;
+    background-color: white;
 
     `;
 
@@ -146,7 +154,27 @@ export const ContainerScroll = styled.div`
     height: 100vh;
     scroll-behavior: smooth;
     `;
+// --------------------------------HIJOS section    
 export const Sections = styled.section`  
     scroll-snap-align: start;
 `;
-// --------------------------------HIJOS
+
+
+export const ButtonDw = styled.button` 
+border-radius :10px ;
+border-color: black;
+background-color:#cbbfe7;
+
+    :hover {
+    transform: translate(-0.25rem,-0.25rem);
+    background: #cbbfe7;
+    border-color: black;
+    box-shadow: 0.25rem 0.25rem var(--bg);
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: "Work Sans";
+    }
+`;

@@ -2,7 +2,7 @@ import React from 'react'
 
 import Navbar from '../components/layout/navigation/Navbar/Navbar'
 import Section from '../components/layout/organization/Section'
-import Section2 from '../components/layout/organization/Section2'
+import SectionTwo from '../components/layout/organization/Section2';
 import {ContainerScroll, Sections} from '../components/layout/styled';
 
 const Home = () => {
@@ -12,9 +12,9 @@ const Home = () => {
       <Sections>
           <Navbar/>
           <Section/>
-          <Section2/>
+          <SectionTwo/>
           <Section/>
-          <Section2/>
+          
       </Sections>
 
     </ContainerScroll>

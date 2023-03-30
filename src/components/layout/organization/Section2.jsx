@@ -1,21 +1,30 @@
 import React from 'react'
-import {ContainerMain2, ContainerRight, ContainerLeft} from '../styled';
-
+import {ContainerMain2, Main1, Main2} from '../styled';
 import Contact from '../navigation/Contact';
+import DownLoad from './DownLoad';
 
-const Section2 = () => {
+
+
+const SectionTwo = () => {
   return (
 
       <ContainerMain2 id='sobremi'> 
 
-          <ContainerLeft>
-            <h1>fotooo</h1>
-          </ContainerLeft>  
+          <Main2>
+              <img src="foto" alt="" /> foto
+              <div>
+                
+              </div>
+          </Main2>  
 
-          <ContainerRight >
+          <Main1 >
               <h1 >Intr <br />
               odu <br />cción.</h1>
-          </ContainerRight>   
+              <p>
+              Hola! <strong>Soy Carla. </strong> <br />
+              Desarrolladora Full Stack. <br /> Me encanta aprender cosas nuevas y plantearme retos.</p>
+              <DownLoad/>
+          </Main1>   
           
           <Contact/>
           
@@ -24,4 +33,4 @@ const Section2 = () => {
   )
 }
 
-export default Section2;
+export default SectionTwo;
