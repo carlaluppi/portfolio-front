@@ -107,6 +107,11 @@ export const ContainerMain2 = styled.section`
     display: flex;
     justify-content: flex-end;
     
+    @media (max-width: 700px) 
+                {
+                display: flex;
+                flex-direction: column;
+            };
 
     .year{
             color: black;
@@ -116,6 +121,19 @@ export const ContainerMain2 = styled.section`
             bottom: 1rem;
             right:3rem;
         }
+`;
+export const ContainerMain3 = styled.section`
+    height: 100vh;
+    padding: 10% 10%;
+    display: flex;
+    justify-content: center;
+    
+    @media (max-width: 700px) 
+                {
+                display: flex;
+                flex-direction: column;
+            };
+
 `;
    
 export const Main1 = styled.section`
@@ -138,13 +156,20 @@ export const Main1 = styled.section`
             letter-spacing: 2px; 
             transform: translateX(15%);
         }
+        @media (max-width: 700px) 
+                {
+                width: 100%;
+            };
 `;
 export const Main2 = styled(Main1)`
     
     height: 100vh;
     width: 50%;
     background-color: white;
-
+    @media (max-width: 700px) 
+                {
+                width: 100%;
+            };
     `;
 
 // -----EFECTO DE SCROLL -----PADRE

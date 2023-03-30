@@ -3,6 +3,7 @@ import React from 'react'
 import Navbar from '../components/layout/navigation/Navbar/Navbar'
 import Section from '../components/layout/organization/Section'
 import SectionTwo from '../components/layout/organization/Section2';
+import SectionThree from '../components/layout/organization/Section3';
 import {ContainerScroll, Sections} from '../components/layout/styled';
 
 const Home = () => {
@@ -13,7 +14,7 @@ const Home = () => {
           <Navbar/>
           <Section/>
           <SectionTwo/>
-          <Section/>
+          <SectionThree/>
           
       </Sections>
 

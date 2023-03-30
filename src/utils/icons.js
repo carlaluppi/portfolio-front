@@ -1,5 +1,5 @@
-{
-    "imagenes": [
+const icons =[ 
+    
         {
         "nombre": "Bootstrap",
         "url": "src/assets/icons/Bootsrap.svg"
@@ -53,5 +53,7 @@
             "nombre": "VisualCode",
             "url": "src/assets/icons/vsc.svg"
         }
-    ]
-    }
+    
+    ];
+
+    export default icons;
