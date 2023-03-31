@@ -11,10 +11,10 @@ function ProyectCard() {
     <Row xs={1} md={2} className="g-4">
       {proyects.map((proyect) => (
 
-        <Col>
+        <Col className='d-flex justify-content-center'>
           <CardStyle >
 
-            <Card.Img className='h-50' src={proyect.image} />
+            <Card.Img src={proyect.image} />
 
             <Card.Body>
               <Card.Title>{proyect.title} </Card.Title>

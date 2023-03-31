@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Card } from "react-bootstrap";
+import { Card , Col} from "react-bootstrap";
 
 
 export const ContainerNav = styled.nav`
@@ -135,14 +135,9 @@ export const ContainerMain2 = styled.section`
                 
             };
 `;
-export const ContainerMain3 = styled.section`
-    height: 100vh;
-    padding:  10%;
 
-
-`;
    
-export const Main1 = styled.section`
+export const Main21 = styled.section`
     background-color: #F0CB46;
     height: 100vh;
     width: 50%;
@@ -167,7 +162,7 @@ export const Main1 = styled.section`
                 width: 100%;
             };
 `;
-export const Main2 = styled(Main1)`
+export const Main22 = styled(Main21)`
     
     height: 100vh;
     width: 50%;
@@ -177,7 +172,21 @@ export const Main2 = styled(Main1)`
                 width: 100%;
             };
     `;
+export const ContainerMain3 = styled.section`
+    height: 100vh;
 
+`;
+export const Main31 = styled.section`
+    width: 100%;
+    height: 20vh;
+    background-color: #F0CB46;
+
+    `;
+    export const Main32 = styled.section`
+    padding: 2% 10%;
+    gap:10px;
+
+    `;
 // -----EFECTO DE SCROLL -----PADRE
 export const ContainerScroll = styled.div`
     scroll-snap-type: y mandatory;
@@ -210,33 +219,24 @@ background-color:#cbbfe7;
 `;
 
 export const CardStyle = styled(Card)`  
-    width: 40rem;
-    height: 20rem;
+    width: 30rem;
+    height: 15rem;
     display: flex;
     justify-content: center;
-    
-&:hover {
-    scale: 1.01;
-    
-    
-}
-.card-title {
-
-}
-
-.card-img {
-    padding: 1rem;
-    /* object-fit: contain; */
-    /* max-height: 100%; */
-    width: 100%;
-    background-color: black;
-
-}
-@media (max-width: 700px) 
+    font-family: "Questrial";
+    &:hover {
+        scale: 1.01;
+    }
+    .card-img {
+        padding: 1rem;
+        width: 100%;
+        background-color: black;
+        height: 5rem;
+    }
+    @media (max-width: 700px) 
                 {
-                    display: flex;
-                    align-items: center;
+                display: flex;
+                align-items: center;
                 width: 100%;
-                
-            };
-    `;
+                };
+`;

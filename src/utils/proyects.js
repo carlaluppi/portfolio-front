@@ -12,7 +12,7 @@ const proyects = [
     {
     id: "2",
     title: "Ranking App",
-    image: "https://raw.githubusercontent.com/carlaluppi/portfolio-front/develop/src/assets/proyects/rankingapp.svg",
+    image: "https://raw.githubusercontent.com/carlaluppi/portfolio-front/develop/src/assets/proyects/rankingapp2.svg",
     text: "Hola soy el texto",
     link: "https://rankingapp.vercel.app/",
     
