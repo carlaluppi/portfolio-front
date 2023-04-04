@@ -230,8 +230,8 @@ export const CardStyle = styled(Card)`
     .card-img {
         padding: 1rem;
         width: 100%;
-        background-color: black;
-        height: 5rem;
+        background-color: #2A2B2F;
+        height: 4.2rem;
     }
     @media (max-width: 700px) 
                 {
