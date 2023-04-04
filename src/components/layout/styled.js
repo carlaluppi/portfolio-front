@@ -182,7 +182,7 @@ export const Main31 = styled.section`
     background-color: #F0CB46;
 
     `;
-    export const Main32 = styled.section`
+    export const Main32 = styled.gitsection`
     padding: 2% 10%;
     gap:10px;
 
