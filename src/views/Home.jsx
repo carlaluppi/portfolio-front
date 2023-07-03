@@ -1,21 +1,24 @@
-import React from 'react'
+import React, { useEffect } from "react";
 
 import Navbar from '../components/layout/navigation/Navbar/Navbar'
-import Section from '../components/layout/organization/Section'
-import SectionTwo from '../components/layout/organization/Section2';
-import SectionThree from '../components/layout/organization/Section3';
+import Section1 from '../components/layout/organization/Section1'
+import Section2 from '../components/layout/organization/Section2';
+import Section3 from '../components/layout/organization/Section3';
+import Section4 from '../components/layout/organization/Section4';
 import {ContainerScroll, Sections} from '../components/layout/styled';
 
+
 const Home = () => {
+
   return (
 
     <ContainerScroll >
       <Sections>
           <Navbar/>
-          <Section/>
-          <SectionTwo/>
-          <SectionThree/>
-          
+          <Section1/>
+          <Section2/>
+          <Section3/>
+          <Section4/>
       </Sections>
 
     </ContainerScroll>

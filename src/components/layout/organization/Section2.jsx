@@ -2,15 +2,17 @@ import React from 'react'
 import {ContainerMain2, Main22, Main21} from '../styled';
 import Contact from '../navigation/Contact';
 import DownLoad from './DownLoad';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
-
-const SectionTwo = () => {
-
+const Section2 = () => {
+  
     return (
 
         <ContainerMain2 id='sobremi'> 
 
-            <Main22>
+            <Main22  >
                 <img src="foto" alt="" /> foto
                 <div>
                 
@@ -18,13 +20,17 @@ const SectionTwo = () => {
             </Main22>  
 
             <Main21 >
+            
                 <h1 >Intr <br />
                 odu <br />cción.</h1>
                 <p>
                 Hola! <strong>Soy Carla. </strong> <br />
                 Desarrolladora Full Stack. <br /> Me encanta aprender cosas nuevas y plantearme retos.</p>
                 <DownLoad/>
-            </Main21>   
+            
+            </Main21> 
+            
+
             <Contact/>
 
         </ContainerMain2>
@@ -32,4 +38,4 @@ const SectionTwo = () => {
 )
 }
 
-export default SectionTwo;
+export default Section2;

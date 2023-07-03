@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Card , Col} from "react-bootstrap";
+import styled, {keyframes}  from "styled-components";
+import { Card } from "react-bootstrap";
 
 
 export const ContainerNav = styled.nav`
@@ -70,8 +70,11 @@ export const ContainerMain = styled.section`
             };
 `;
 
+
+
 export const Title = styled.div`
     transform: translateX(-50%);
+    
     
         .title{
             font-weight:800;
@@ -90,6 +93,9 @@ export const Title = styled.div`
                 transform: translateX(-5%);
             }
         }
+
+
+   
 `;
 
 export const ContainerContact = styled.div`
@@ -136,8 +142,8 @@ export const ContainerMain2 = styled.section`
             };
 `;
 
-   
-export const Main21 = styled.section`
+
+export const Main21 = styled.div`
     background-color: #F0CB46;
     height: 100vh;
     width: 50%;
@@ -146,6 +152,8 @@ export const Main21 = styled.section`
     align-items: center;
     flex-direction: column;
     gap: 2rem;
+    
+
         h1{ 
             font-size: 5rem;
             font-weight:800;
@@ -172,20 +180,33 @@ export const Main22 = styled(Main21)`
                 width: 100%;
             };
     `;
+
+export const Main41 = styled(Main21)`
+    transform: translate(-50%)
+    height: 50vh;
+    width: 100%;
+    display: flex;
+        
+    @media (max-width: 700px) 
+                {
+                width: 100%;
+            };
+    `;
 export const ContainerMain3 = styled.section`
     height: 100vh;
 
 `;
 export const Main31 = styled.section`
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     background-color: #F0CB46;
 
     `;
-    export const Main32 = styled.gitsection`
-    padding: 2% 10%;
-    gap:10px;
-
+    export const Main32 = styled.section`
+    padding: 5% 20%;
+    /* background-color: #F0CB46; */
+    height: 100vh;
+    
     `;
 // -----EFECTO DE SCROLL -----PADRE
 export const ContainerScroll = styled.div`
@@ -219,19 +240,22 @@ background-color:#cbbfe7;
 `;
 
 export const CardStyle = styled(Card)`  
-    width: 30rem;
+    
     height: 15rem;
     display: flex;
     justify-content: center;
+    align-items:center;
     font-family: "Questrial";
+    border-color:black;
+    box-shadow:0.3em 0.3em 1em rgba(0,0,0,0.2);
+
     &:hover {
         scale: 1.01;
     }
     .card-img {
-        padding: 1rem;
-        width: 100%;
-        background-color: #2A2B2F;
-        height: 4.2rem;
+        padding: 0.5rem;
+        background: rgba(0,0,0,0.8);
+
     }
     @media (max-width: 700px) 
                 {
@@ -240,3 +264,54 @@ export const CardStyle = styled(Card)`
                 width: 100%;
                 };
 `;
+
+export const ContainerIcons = styled.div`
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    
+`;
+
+export const Icons = styled.div`
+    display:flex;
+    gap:10px;
+    background: red;
+   
+
+`; 
+
+export const Contact = styled(Title)`
+ transform: translateX(50%);
+ display: flex;
+ flex-direction:column;
+ gap:50px;
+ background-color: #F0CB46;
+
+    
+    .title{
+        font-weight:800;
+        font-size: 6rem;
+        position: relative;
+
+        &::after{
+            content: "";
+            width: 110%;
+            height: 1.5rem;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            transform: translateX(-5%);
+        }
+    .p {
+        width: 100%;
+        margin: 0;
+    }
+    }
+
+`; 
+
+
+
+

@@ -4,15 +4,15 @@ const proyects = [
         id: "1",
         title: "Escape Room 404",
         image: "https://raw.githubusercontent.com/carlaluppi/portfolio-front/develop/src/assets/proyects/404.svg",
-        text: "Hola soy el texto",
+        text: "Hola soy el texto ",
         link: "",
         repo:"https://github.com/carlaluppi/escape-room-frontend",
         repoback:"https://github.com/carlaluppi/escape-room-backend",
         tech:
         [
-             "https://raw.githubusercontent.com/carlaluppi/portfolio-front/develop/src/assets/icons/Bootstrap.svg",
+            "https://raw.githubusercontent.com/carlaluppi/portfolio-front/develop/src/assets/icons/Bootstrap.svg",
             "https://raw.githubusercontent.com/carlaluppi/portfolio-front/develop/src/assets/icons/Javascript.svg",
-             "https://raw.githubusercontent.com/carlaluppi/portfolio-front/develop/src/assets/icons/Javascript.svg",
+
         ]
         },
 
