@@ -1,7 +1,8 @@
 import React from 'react'
-import {ContainerMain3, Main31, Main32} from '../styled';
-import ProyectCard from './ProyectCard';
+import {    Main31, Main32} from '../styled';
+import ProyectSection from './ProyectSection';
 import AOS from 'aos';
+
 
 AOS.init();
 
@@ -9,14 +10,13 @@ const Section3 = () => {
 
     return (
 
-    <ContainerMain3 id='proyectos'> 
-    <Main31></Main31>
-        <Main32>
+    <Main31>
+        <Main32 id='proyectos'>
             <h1>MIS PROYECTOS</h1>
-            <ProyectCard/>
+            
+            <ProyectSection/>
         </Main32>
-
-    </ContainerMain3>
+    </Main31>
 
 )
 }

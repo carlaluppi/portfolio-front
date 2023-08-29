@@ -10,12 +10,12 @@ const Section4 = () => {
         <Main41>
             <Contact>
             <h1 className='title'>Contáctame</h1>
-            
-            <p>+34 622683469 <br />
-            <a href="https://www.linkedin.com/in/carla-luppi"> www.linkedin.com/in/carla-luppi</a><br />
-            carluppi99@gmail.com
-            </p>
-            
+
+                <ul>
+                    <li>TEL:  &nbsp;&nbsp;  + 34 622683469</li>
+                    <li>LINKEDIN:&nbsp;&nbsp; <a href="https://www.linkedin.com/in/carla-luppi">  www.linkedin.com/in/carla-luppi</a></li>
+                    <li>CORREO: &nbsp;&nbsp; carluppi99@gmail.com</li>
+                </ul>
 
             </Contact>
         </Main41>

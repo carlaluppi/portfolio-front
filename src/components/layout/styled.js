@@ -1,4 +1,4 @@
-import styled, {keyframes}  from "styled-components";
+import styled from "styled-components";
 import { Card } from "react-bootstrap";
 
 
@@ -74,8 +74,6 @@ export const ContainerMain = styled.section`
 
 export const Title = styled.div`
     transform: translateX(-50%);
-    
-    
         .title{
             font-weight:800;
             font-size: 6rem;
@@ -93,9 +91,6 @@ export const Title = styled.div`
                 transform: translateX(-5%);
             }
         }
-
-
-   
 `;
 
 export const ContainerContact = styled.div`
@@ -109,7 +104,6 @@ export const ContainerContact = styled.div`
                 {
                     margin-left: 3%; 
             };
-
 `;
 export const Vertical = styled.div`
         padding-top:30px;
@@ -174,7 +168,7 @@ export const Main22 = styled(Main21)`
     
     height: 100vh;
     width: 50%;
-    background-color: white;
+    background-color: rgb(245, 245, 245);
     @media (max-width: 700px) 
                 {
                 width: 100%;
@@ -182,32 +176,38 @@ export const Main22 = styled(Main21)`
     `;
 
 export const Main41 = styled(Main21)`
-    transform: translate(-50%)
-    height: 50vh;
+
     width: 100%;
-    display: flex;
-        
+    display: flex; 
     @media (max-width: 700px) 
                 {
                 width: 100%;
             };
     `;
-export const ContainerMain3 = styled.section`
-    height: 100vh;
 
+export const ContainerMain3 = styled.section`
+   
 `;
 export const Main31 = styled.section`
-    width: 100%;
-    height: 15vh;
-    background-color: #F0CB46;
-
-    `;
-    export const Main32 = styled.section`
-    padding: 5% 20%;
-    /* background-color: #F0CB46; */
-    height: 100vh;
+    height: 100vh;   
     
     `;
+export const Main32 = styled.section`
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+        h1{    
+            padding: 2%;
+            font-family: "Questrial";
+            font-size: 2rem;
+            font-weight:600;
+            
+        }
+    `;
+
 // -----EFECTO DE SCROLL -----PADRE
 export const ContainerScroll = styled.div`
     scroll-snap-type: y mandatory;
@@ -273,10 +273,11 @@ export const ContainerIcons = styled.div`
 `;
 
 export const Icons = styled.div`
-    display:flex;
-    gap:10px;
-    background: red;
-   
+   padding: 10% 8%;
+   display: flex;
+   justify-content: center;
+   gap:10px;
+
 
 `; 
 
@@ -287,6 +288,15 @@ export const Contact = styled(Title)`
  gap:50px;
  background-color: #F0CB46;
 
+
+        ul {
+            list-style: none;
+            font-size:1.2rem;
+            font-family: "Questrial";
+            li{
+            margin: 8px;
+            } 
+        } 
     
     .title{
         font-weight:800;
@@ -304,14 +314,95 @@ export const Contact = styled(Title)`
             z-index: -1;
             transform: translateX(-5%);
         }
-    .p {
-        width: 100%;
-        margin: 0;
-    }
+    
     }
 
 `; 
 
+export const CardSection = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
 
+    .card {
+  position: relative;
+  height: 200px;
+  width:500px;
+  background: #fff;
+  overflow: hidden;
+  float: left;
+  margin: 15px;
+  
+  &__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    top: calc(100% - 80px);
+    left: 0;
+    opacity: 1;
+    transition: all 0.75s ease-in-out;
+    
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    
+    &-inner {
+      position: relative;
+      display: block;
+      height: 80px;
+
+      display: flex;
+      flex-flow: column nowrap;
+      text-align: center;
+      justify-content: center;
+      
+      transition: all 0.75s ease-in-out;
+    }
+    &:after {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 30px;
+      height: 30px;
+      border-color:  #F0CB46;
+      border-style: solid;
+      border-width: 3px 0 0 3px;
+      content: "";
+    }
+  }
+  &__title {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Questrial";
+    color: black;
+    letter-spacing: 1px;
+  }
+  &__description {
+    color: black;
+    font-family: "Questrial";
+  }
+  &:after {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-color:  #F0CB46;
+    border-style: solid;
+    border-width: 0 3px 3px 0;
+    content: "";
+  }
+  &:hover 
+    .card__content {
+      top: 0;
+
+      &-inner {
+        height: 100%;
+
+      }
+}}
+`; 
 
 
