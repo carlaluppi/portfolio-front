@@ -273,12 +273,13 @@ export const ContainerIcons = styled.div`
 `;
 
 export const Icons = styled.div`
-   padding: 10% 8%;
-   display: flex;
-   justify-content: center;
-   gap:10px;
-   
-   flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap:8px;
+    margin-top: 1%;
+    
 `; 
 
 export const Contact = styled(Title)`
@@ -323,11 +324,18 @@ export const CardSection = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
+    .card__description {
+    margin: 0% 10% ;
+    display:flex;
+    justify-content: center;
+
+    }
   
 
     .card {
   position: relative;
-  height: 200px;
+  height: 230px;
   width:500px;
   background: #fff;
   overflow: hidden;
@@ -339,7 +347,7 @@ export const CardSection = styled.div`
     width: 100%;
     height: 100%;
     background: #fff;
-    top: calc(100% - 80px);
+    top: calc(100% - 100px);
     left: 0;
     opacity: 1;
     transition: all 0.75s ease-in-out;
@@ -357,7 +365,7 @@ export const CardSection = styled.div`
       flex-flow: column nowrap;
       text-align: center;
       justify-content: center;
-      
+      /* background:red; */
       transition: all 0.75s ease-in-out;
     }
     &:after {
@@ -373,11 +381,12 @@ export const CardSection = styled.div`
     }
   }
   &__title {
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     font-family: "Questrial";
     color: black;
     letter-spacing: 1px;
+    font-size: 1.2rem;
   }
   &__description {
     color: black;

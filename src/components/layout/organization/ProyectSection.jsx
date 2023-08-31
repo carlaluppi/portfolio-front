@@ -21,7 +21,7 @@ const ProyectSection = () => {
         <div className="card__content-inner">
           <div className="card__title">{proyect.title}</div>
           
-          {/* <div className="card__description">{proyect.text}</div> */}
+
           {Array.isArray(proyect.tech) && (
             <Icons>
               {proyect.tech.map((tech, index) => (
@@ -32,7 +32,9 @@ const ProyectSection = () => {
               {proyect.repoback && (
               <GitHubButton  href={proyect.repoback} data-color-scheme="no-preference: dark; light: dark_high_contrast; dark: dark_high_contrast;" data-size="large" aria-label="Follow @buttons on GitHub"> Back</GitHubButton>) } */}
             </Icons>
+            
           )}
+          <div className="card__description">{proyect.text}</div>
 
           {proyect.link && (  // Verifica si hay un enlace antes de mostrar "Ver más"
             <Link
