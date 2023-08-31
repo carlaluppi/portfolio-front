@@ -13,7 +13,6 @@ const proyects = [
             "https://raw.githubusercontent.com/carlaluppi/portfolio-front/develop/src/assets/icons/PHP.svg",
             "https://raw.githubusercontent.com/carlaluppi/portfolio-front/develop/src/assets/icons/React.svg",
             "https://raw.githubusercontent.com/carlaluppi/portfolio-front/develop/src/assets/icons/css.svg",
-            "https://raw.githubusercontent.com/carlaluppi/portfolio-front/develop/src/assets/icons/css.svg",
             "https://raw.githubusercontent.com/carlaluppi/portfolio-front/develop/src/assets/icons/laravel.svg",
             "https://raw.githubusercontent.com/carlaluppi/portfolio-front/develop/src/assets/icons/figma.svg",
             "https://raw.githubusercontent.com/carlaluppi/portfolio-front/develop/src/assets/icons/html.svg",
