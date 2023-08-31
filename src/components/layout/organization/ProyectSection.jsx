@@ -26,9 +26,11 @@ const ProyectSection = () => {
             <Icons>
               {proyect.tech.map((tech, index) => (
                 <img src={tech} alt={index} key={`${proyect.id}-${index}`} />
-              ))}<GitHubButton href={proyect.repo}data-size="large" aria-label="Follow @buttons on GitHub">Front</GitHubButton>
-            {proyect.repoback && (
-            <GitHubButton  href={proyect.repoback} data-color-scheme="no-preference: dark; light: dark_high_contrast; dark: dark_high_contrast;" data-size="large" aria-label="Follow @buttons on GitHub"> Back</GitHubButton>) }
+              ))}
+              
+              {/* <GitHubButton href={proyect.repo}data-size="large" aria-label="Follow @buttons on GitHub">Front</GitHubButton>
+              {proyect.repoback && (
+              <GitHubButton  href={proyect.repoback} data-color-scheme="no-preference: dark; light: dark_high_contrast; dark: dark_high_contrast;" data-size="large" aria-label="Follow @buttons on GitHub"> Back</GitHubButton>) } */}
             </Icons>
           )}
 

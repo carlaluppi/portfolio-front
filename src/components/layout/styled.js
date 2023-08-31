@@ -277,8 +277,8 @@ export const Icons = styled.div`
    display: flex;
    justify-content: center;
    gap:10px;
-
-
+   
+   flex-wrap: wrap;
 `; 
 
 export const Contact = styled(Title)`
