@@ -177,7 +177,7 @@ export const Main21 = styled.div`
             letter-spacing: 2px; 
             transform: translateX(15%);
         }
-        @media (max-width: 700px) 
+        @media (max-width: 600px) 
                 {
                 width: 100%;
                 height: 100%;
@@ -211,7 +211,7 @@ export const Main22 = styled(Main21)`
                 width: 50%;
                 transform: translateX(50%);
         } 
-           
+
     @media (max-width: 700px) {
                 height: 100%;
                 width: 100%;
@@ -236,6 +236,7 @@ export const Main4 = styled(Main21)`
     width: 100%;
     display: flex; 
     align-items: flex-end;
+
     `;
 
 export const ContainerMain3 = styled.section`
@@ -363,6 +364,7 @@ export const Contact = styled(Title)`
  background-color: #F0CB46;
  z-index: +10;
  
+
          ul {
             list-style: none;
             font-size:1.2rem;
@@ -372,9 +374,9 @@ export const Contact = styled(Title)`
             } 
         } 
   
-            @media (max-width: 700px) 
+            @media (max-width: 600px) 
                 {
-                width: 90%;
+                width: 95%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
