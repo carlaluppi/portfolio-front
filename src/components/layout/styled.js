@@ -105,6 +105,7 @@ export const ContainerContact = styled.div`
         @media (max-width: 700px) 
                 {
                     margin-left: 3%; 
+                    z-index: +100;
                     
             };
 `;
@@ -122,11 +123,13 @@ export const Icon = styled.div`
         display: flex;
         flex-direction: column;
         gap:0.5rem;
+        z-index: +100;
 
         @media (max-width: 700px) 
                 {
                     margin-left: 3%; 
                     gap: 0.3rem;
+                    z-index: +100;
                     
 
             };
@@ -358,6 +361,7 @@ export const Contact = styled(Title)`
  flex-direction:column;
  gap:50px;
  background-color: #F0CB46;
+ z-index: +10;
  
          ul {
             list-style: none;
