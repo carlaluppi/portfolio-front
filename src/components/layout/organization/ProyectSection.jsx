@@ -28,23 +28,23 @@ const ProyectSection = () => {
                 <img src={tech} alt={index} key={`${proyect.id}-${index}`} />
               ))}
               
-              {/* <GitHubButton href={proyect.repo}data-size="large" aria-label="Follow @buttons on GitHub">Front</GitHubButton>
+              <GitHubButton href={proyect.repo}data-size="large" aria-label="Follow @buttons on GitHub">Front</GitHubButton>
               {proyect.repoback && (
-              <GitHubButton  href={proyect.repoback} data-color-scheme="no-preference: dark; light: dark_high_contrast; dark: dark_high_contrast;" data-size="large" aria-label="Follow @buttons on GitHub"> Back</GitHubButton>) } */}
+              <GitHubButton  href={proyect.repoback} data-color-scheme="no-preference: dark; light: dark_high_contrast; dark: dark_high_contrast;" data-size="large" aria-label="Follow @buttons on GitHub"> Back</GitHubButton>) }
             </Icons>
             
           )}
           <div className="card__description">{proyect.text}</div>
 
-          {proyect.link && (  // Verifica si hay un enlace antes de mostrar "Ver más"
-            <Link
+          {proyect.link && (  // Verifica si hay un enlace antes de mostrar "link"
+            <Link className='link'
               to="/"
               onClick={(event) => {
                 event.preventDefault();
                 handleClick(proyect.link);
               }}
             >
-              Ver más  {  }
+              LINK  {  }
               <img src={rocket} alt="deploy" />
               
             </Link>)}
