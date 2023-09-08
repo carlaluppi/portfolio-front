@@ -11,8 +11,8 @@ const Section4 = () => {
             <h1 className='title'>Contáctame</h1>
 
                 <ul>
-                    <li> TEL:  &nbsp;&nbsp;  + 34 622683469</li>
-                    <li>LINKEDIN:&nbsp;&nbsp; <a href="https://www.linkedin.com/in/carla-luppi">  www.linkedin.com/in/carla-luppi</a></li>
+                    <li> TEL:  &nbsp;&nbsp; <a href='https://api.whatsapp.com/send/?phone=622683469&text&type=phone_number&app_absent=0'>+ 34 622683469</a> </li>
+                    <li>LINKEDIN:&nbsp; <a href="https://www.linkedin.com/in/carla-luppi">/carla-luppi</a></li>
                     <li>CORREO: &nbsp;&nbsp; carluppi99@gmail.com</li>
                 </ul>
 

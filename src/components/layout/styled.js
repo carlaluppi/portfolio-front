@@ -91,10 +91,7 @@ export const Title = styled.div`
                 z-index: -1;
                 transform: translateX(-5%);
             }
-            @media (max-width: 700px)  {
-                transform: translateX(1%);
-                margin-top: -30%;
-            }
+           
         }
 `;
 
@@ -362,29 +359,24 @@ export const Contact = styled(Title)`
  gap:50px;
  background-color: #F0CB46;
  
-        ul {
+         ul {
             list-style: none;
             font-size:1.2rem;
             font-family: "Questrial";
             li{
-            margin: 8px;
+            gap: 8px;
             } 
         } 
-            
-                
+  
             @media (max-width: 700px) 
                 {
-                    width: 90%;
+                width: 90%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                transform: translateX(5%);
+                transform: translateX(-5%);
                 gap:10px;
-                margin-top: -30%;
-                ul{
-                    
-                    margin: 0;
-                }
+
             }
 
     
@@ -394,7 +386,7 @@ export const Contact = styled(Title)`
         position: relative;
         @media (max-width: 700px) 
                 {
-                font-weight:700;
+                font-weight:7500;
                 font-size: 3rem;
                 display: flex;
                 align-items: center;
@@ -518,15 +510,15 @@ export const CardSection = styled.div`
 @media (max-width: 700px) 
                 {
                 width: 95%;
-
+                
+           
             .card__description {
     margin: 0% 5% ;
     display:flex;
     justify-content: center;} 
-    
-    .card {
 
-    }};
+
+    };
 `; 
 
 
