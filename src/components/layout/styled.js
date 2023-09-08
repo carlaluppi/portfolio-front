@@ -518,8 +518,7 @@ export const CardSection = styled.div`
 @media (max-width: 700px) 
                 {
                 width: 95%;
-                
-           
+
             .card__description {
     margin: 0% 5% ;
     display:flex;
@@ -527,7 +526,7 @@ export const CardSection = styled.div`
     
     .card {
 
-    };
+    }};
 `; 
 
 
